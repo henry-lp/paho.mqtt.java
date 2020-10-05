@@ -665,7 +665,6 @@ public class ClientState {
 	 * @throws MqttException if an exception occurs whilst removing the message
 	 */
 	protected boolean removeMessage(IMqttDeliveryToken token) throws MqttException {
-		final String methodName = "removeMessage";
 		MqttMessage message = token.getMessage();
 		int messageId = token.getMessageId();
 		boolean result = false;
